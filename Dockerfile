@@ -6,7 +6,7 @@ COPY . .
 RUN npm run build
 
 FROM nginx
-WORKDIR /usr/share/nginx/r2/html
+WORKDIR /usr/share/nginx/html
 RUN rm -rf *
 COPY --from=build /app/dist .
 EXPOSE 81
