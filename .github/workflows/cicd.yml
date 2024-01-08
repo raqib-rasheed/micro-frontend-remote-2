@@ -20,7 +20,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: micro-frontend
+    runs-on: micro-fe-r2
     steps:
       - name: Pull image from docker hub
         run: docker pull rqbabdl/micro-frontend-r2:latest
